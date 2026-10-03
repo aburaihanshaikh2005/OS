@@ -1,11 +1,10 @@
-#!/bin/bash
 #Leap Year
-echo "Enter a Year:"
-read n
-if (( n % 400 == 0 )) || (( n % 4 == 0 && n % 100 != 0 ))
+#!/bin/bash
+echo "Enter Year:"
+read year
+if [ $((year%400)) -eq 0  ] || [ $(($year%4)) -eq 0 ] && [  $((year%100)) -ne 0 ]
 then
-    echo "This is a Leap year"
+	echo "$year is Leap year."
 else
-    echo "This is not a Leap year"
+	echo "$year is not a leap year."
 fi
-
