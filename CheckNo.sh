@@ -1,12 +1,13 @@
 #Check whether a number is postive,negative or zero.
 #!/bin/bash
-echo "Enter Number:"
+echo "Enter num:"
 read num
-
-if [ $num -gt 0 ]; then
-  echo "$num is positive number"
-elif [ $num -lt 0 ]; then
-  echo "$num is negative number"
-else 
-  echo "$num is zero."
+if [ $num -gt 0 ]
+then 
+	echo "Positive ."
+elif [ $num -lt 0 ]
+then
+	echo "Negative no."
+else
+	echo "Zero"
 fi
