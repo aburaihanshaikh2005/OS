@@ -1,11 +1,12 @@
+#Solid Rectangle
 #!/bin/bash
-echo "Enter number:"
+echo "Enter n:"
 read n
-for ((i=1;i<=4;i++))
+for ((i=0;i<n;i++))
 do
-  for ((j=1;j<=i;j++))
-  do
-    echo -n "*"
-  done 
-  echo
+	for ((j=0;j<=i;j++))
+	do
+		echo -n "* "
+	done
+	echo 
 done
