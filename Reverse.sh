@@ -3,7 +3,7 @@
 echo "Enter Number:"
 read num
 rev=0
-while [ $num -gt 0 ]
+while [ $num -ne 0 ]
 do 
   temp=$((num%10))
   rev=$((rev*10+temp))
