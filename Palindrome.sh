@@ -1,18 +1,18 @@
 #Palindrome Number
 #!/bin/bash
-echo "Enter the number:"
-read n
-temp=$n
+echo "Enter number:"
+read num
+result=$num
 rev=0
-while [ $n -gt 0 ]
+while ((num!=0))
 do
-  rem=$((n%10))
-  rev=$((rev*10+rem))
-  n=$((n/10))
+	temp=$((num%10))
+	rev=$((rev*10+temp))
+	num=$((num/10))
 done
-if [ $temp -eq $rev ];then
-   echo "Palindrome Number"
-else
-   echo "Not Palindrome Number"
+if [ $result -eq $rev ]
+then
+	echo "Palindrome"
+else 
+	echo "Not Palindrome"
 fi
-
