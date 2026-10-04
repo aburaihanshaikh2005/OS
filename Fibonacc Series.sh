@@ -1,14 +1,17 @@
 #Fibonacci Series
 #!/bin/bash
-echo "Enter no:"
+echo "Enter n:"
 read n
 a=0
 b=1
-echo "Fibonacci Series:"
-for ((i=1;i<=n;i++))
-do 
-    echo -n "$a"
-    c=$((a+b))
-    a=$b
-    b=$c
+count=2
+echo "Fibonacci Series: $a $b"
+while ((count<n))
+do	
+	temp=$b
+	b=$((a+b))
+	a=$temp
+	((count++))
+	echo -n "$b "
 done
+
