@@ -5,13 +5,14 @@ read n
 a=0
 b=1
 count=2
-echo "Fibonacci Series: $a $b"
-while ((count<n))
-do	
-	temp=$b
-	b=$((a+b))
-	a=$temp
-	((count++))
-	echo -n "$b "
+echo -n "Fibonacci Series 0 1 "
+while((count<n))
+do 
+  temp=$b
+  b=$((a+b))
+  a=$temp
+  ((count++))
+  echo -n "$b "
 done
+
 
