@@ -1,11 +1,12 @@
 #!/bin/bash
 #Check even odd
-echo "Enter the number:"
-read n
-if [ $((n % 2)) -eq 0 ]; then
-   echo " $n is Even"
+echo "Enter num"
+read num
+if [ $((num%2)) -eq 0 ]
+then
+    echo "Even"
 else
-   echo "$n is Odd"
+    echo "Odd"
 fi
           
 
